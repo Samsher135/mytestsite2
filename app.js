@@ -67,7 +67,7 @@ const Mydata = new mongoose.model('Mydata', testingSchema);
 app.get("/Book", async (req, res) =>  {
   try{
     const result = await Mydata.find({ _id: "60265c07bfbec70d381ca246" })
-    .select({_id : 0, name : 1});
+    .select({_id : 0, name : 1, Roll_no: 1});
     res.send(result);
   }catch(err){
     res.send(err);
