@@ -1,0 +1,46 @@
+<!DOCKTYPE html>
+    <html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>RESERVATION</title>
+        <link rel="stylesheet" href="/css/Book1.css">
+        <link rel="stylesheet" href="responsive.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+            integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    </head>
+
+    <body>
+        <header>
+            <div class="container">
+                <div class="header-left">
+                    <i class="fas fa-subway"></i>
+                </div>
+                <span class="tittle">Indian Railways</span>
+
+                <div class="header-right">
+                    <a href="/register">Sign up</a>
+                </div>
+            </div>
+        </header>
+        <div class="Train">
+            <h1>{{title}}</h1>
+            <table class="table table-responsive">
+                <thead>
+                    <tr>
+                        <th>name</th>
+                        <th>roll</th>
+                    </tr>
+                </thead>
+                {{#each Mydata}}
+                <tr>
+                    <td>{{this.name}}</td>
+                    <td>{{this.Roll_no}}</td>
+                </tr>
+                {{/each}}
+            </table>
+        </div>
+    </body>
+
+    </html>

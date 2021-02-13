@@ -1,0 +1,28 @@
+/* reset ================================ */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+  font-family: 'Hiragino Sans', sans-serif;
+  line-height: 1.7;
+  letter-spacing: 1px;
+}
+
+body {
+  margin: 0;
+  background-color: aqua;
+}
+
+th, td{
+  border: 1px solid black;
+  width: 50%;
+  text-align: center;
+  position: relative;
+  left: 580px;
+}
+
+h1{
+  text-align: center;
+}

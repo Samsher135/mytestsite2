@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Lucida Grande";
+    background-image: url(/images/B1.jpg);
+}
+
+a {
+    text-decoration: none;
+}
+
+.clear {
+    clear: left;
+}
+
+.container {
+    max-width: 1170px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.tittle {
+    font-size: xx-large;
+    color: blueviolet;
+    position: relative;
+    top: 10px;
+    right: 180px;
+}
+
+.fa {
+    margin-right: 5px;
+}
+
+header {
+    height: 65px;
+    width: 100%;
+    background-color: rgba(34, 49, 52, 0.9);
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+.fa-subway:before {
+    content: "\f239";
+    font-size: xxx-large;
+    color: blueviolet;
+    margin-top: 7px;
+    display: block;
+    position: relative;
+    right: 190px;
+}
+
+.header-left {
+    float: left;
+}
+
+.header-right {
+    float: right;
+    margin-right: -25px;
+}
+
+.header-right a {
+    line-height: 65px;
+    padding: 0 25px;
+    color: white;
+    display: block;
+    float: left;
+    transition: all 0.5s;
+}
+
+.header-right a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.Box{
+    color: blueviolet;
+    text-align: center;
+    position: relative;
+    top: 100px;
+    left: 500px;
+    padding-top: 50px;
+    opacity: 0.9;
+    background-color: aliceblue;
+    width: 500px;
+    height: 500px;
+    border: 5px solid black;
+  }
+
+.form-group{
+    margin-bottom: 30px;
+
+}

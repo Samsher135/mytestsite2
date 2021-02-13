@@ -1,0 +1,16 @@
+const updateDocument = async () => {
+  try{
+    const result = await Testing.findByIdAndUpdate({_id:"60265c07bfbec70d381ca246"},{
+      $Set : {
+        name : "Mihir"
+      }
+    }, {
+      new : true,
+      useFindAndModify : false
+    });
+    console.log(result);
+  }catch(err){
+    console.log(err);
+  }
+
+}

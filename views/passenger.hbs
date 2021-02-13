@@ -1,0 +1,52 @@
+<!DOCKTYPE html>
+    <html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>RESERVATION</title>
+        {{!-- <link rel="stylesheet" href="/css/passenger.css">
+        <link rel="stylesheet" href="responsive.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+            integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous"> --}}
+    </head>
+
+    <body>
+        <header>
+            <div class="container">
+                <div class="header-left">
+                    <i class="fas fa-subway"></i>
+                </div>
+                <span class="tittle">Indian Railways</span>
+
+                <div class="header-right">
+                    <a href="/register">Sign up</a>
+                    <a href="/login" class="login">Log in</a>
+                </div>
+            </div>
+        </header>
+        <div class="Box">
+            <h2>Passenger Details</h2>
+            <div class="rows">
+                <div class="column">
+                    <form action="/passenger" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="_id" class="form-control" placeholder="id">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="name" class="form-control" placeholder="name">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="roll" class="form-control" placeholder="roll">
+                        </div>
+                        <div class="form-group">
+                            <button class="btn">Next</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+    </html>
