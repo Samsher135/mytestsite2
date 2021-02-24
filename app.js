@@ -66,8 +66,7 @@ const Mydata = new mongoose.model('Mydata', testingSchema);
 //getDocument();
 app.get("/Book", async (req, res) =>  {
   try{
-    const result = await Mydata.find({ _id: "60265c07bfbec70d381ca246" })
-    .select({_id : 0, name : 1, Roll_no: 1});
+    const result = await Mydata.find().sort({ $natural: -1 }).limit(1);
     res.send(result);
   }catch(err){
     res.send(err);
